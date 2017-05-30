@@ -1,0 +1,5 @@
+name: agw_module
+type: module
+description: AGW RESTful API
+package: Custom
+core: 8.x

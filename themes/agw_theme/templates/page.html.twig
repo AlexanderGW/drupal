@@ -1,0 +1,61 @@
+<div id="page-wrapper">
+    <div id="page">
+        <nav class="navbar navbar-inverse bg-inverse">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./core/themes/bartik/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    AGW
+                </a>
+                {{ page.primary_menu }}
+            </div>
+        </nav>
+
+        <header id="header" class="container" role="banner" aria-label="{{ 'Site header'|t }}">
+            <div class="card">
+                <div class="card-block">
+                    {{ page.header }}
+                </div>
+            </div>
+        </header>
+
+        <div id="main-wrapper" class="container">
+            <div class="row">
+                {% if page.sidebar_left %}
+                    <div id="sidebar-first" class="col-md-4">
+                        <aside class="card" role="complementary">
+                            <div class="card-block">{{ page.sidebar_left }}</div>
+                        </aside>
+                    </div>
+                {% endif %}
+                <div id="main" class="col">
+                    {{ page.breadcrumb }}
+                    <main id="content" class="card main-content" role="main">
+                        <section class="card-block">
+                            <a id="main-content" tabindex="-1"></a>
+                            {{ page.content }}
+                        </section>
+                    </main>
+                </div>
+                {% if page.sidebar_right %}
+                    <div id="sidebar-second" class="col-md-4">
+                        <aside class="card" role="complementary">
+                            <div class="card-block">{{ page.sidebar_right }}</div>
+                        </aside>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <footer class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-block">
+                            {{ page.footer }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

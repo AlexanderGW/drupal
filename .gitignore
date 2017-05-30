@@ -1,0 +1,15 @@
+# Ignore configuration files that may contain sensitive information.
+*/sites/*/settings*.php
+*/sites/*/*.settings.php
+*/sites/local.sites.php
+# Ignore paths that contain user-generated content.
+# */sites/*/files
+# */sites/*/private
+# Ignore editor specific files.
+nbproject
+.idea
+# Ignore OS specific files.
+.DS_Store
+# Ignore SASS cache
+.sass-cache
+.sass-cache/*

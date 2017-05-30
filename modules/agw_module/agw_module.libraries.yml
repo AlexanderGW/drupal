@@ -1,0 +1,7 @@
+agw_module:
+  version: 1.x
+  js:
+    js/agw_module.js: {}
+  dependencies:
+      - core/jquery
+      - core/drupalSettings

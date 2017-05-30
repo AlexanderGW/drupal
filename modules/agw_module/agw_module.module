@@ -1,0 +1,9 @@
+<?php
+
+function agw_module_theme($existing, $type, $theme, $path){
+	return [
+		'agw_module_agwblock' => [
+			'template' => 'block--agw_module'
+		]
+	];
+}

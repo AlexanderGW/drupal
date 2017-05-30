@@ -1,0 +1,15 @@
+name: agw_theme
+type: theme
+description: 'AGW test theme'
+core: 8.x
+version: 1.0
+libraries:
+  - agw_theme/global-styling
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  sidebar_left: 'Sidebar Left'
+  sidebar_right: 'Sidebar Right'
+  page_top: 'Page Top'
+  content: 'Main content'
+  footer: 'Footer'

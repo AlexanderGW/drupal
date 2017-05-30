@@ -1,0 +1,6 @@
+agw:
+  path: '/api'
+  defaults:
+    _controller: '\Drupal\agw_module\Controller\AgwController::api'
+  requirements:
+    _permission: 'access content'
